@@ -31,7 +31,7 @@ Desenvolvido por Iago na Academia do Programador.
 4. Em seguida compile e execute o projeto com o comando: 
 
     ```
-    dotnet run --project DiamanteDeX.Console.App
+    dotnet run --project DiamanteDeX.ConsoleApp
     ```
 
 ## Requistitos
