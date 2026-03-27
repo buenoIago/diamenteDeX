@@ -1,5 +1,7 @@
 # 💎 DIAMANTE 💎
 
+![](.docs/WindowsTerminal_WQrekwjm9P.gif)
+
 ## 💎 INTRODUÇÃO
 
 Este projeto foi desenvolvido em C# com execução via Console e tem como objetivo simular um sistema de gerenciamento e análise de diamantes em um ambiente lógico. A aplicação permite manipular dados relacionados a características como peso, valor, classificação e lapidação, oferecendo uma forma estruturada de processar informações sobre pedras preciosas.
