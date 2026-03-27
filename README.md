@@ -1,4 +1,4 @@
-# 💎 DIAMANTE 💎
+# 💎 DIAMANTE DE X💎
 
 ![](.docs/WindowsTerminal_WQrekwjm9P.gif)
 
