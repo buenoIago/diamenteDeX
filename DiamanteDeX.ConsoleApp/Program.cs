@@ -18,63 +18,48 @@ class Program
         {
             Console.Clear();
 
-            Console.Write("Informe um número inteiro ímpar: ");
-            int tamanhoDiamante = Convert.ToInt32(Console.ReadLine());
+            System.Console.WriteLine("----------------------------------");
+            System.Console.WriteLine("DIAMANTE DE X");
+            System.Console.WriteLine("----------------------------------\n");
 
-            if (tamanhoDiamante % 2 == 0)
+            Console.Write("Informe um número inteiro ímpar: ");
+            Diamante.tamanhoDiamante = Convert.ToInt32(Console.ReadLine());
+
+            if (Diamante.tamanhoDiamante % 2 == 0)
             {
                 Console.Write("Você informou um número par. O número precisa ser ímpar");
                 return;
             }
 
-            int linhaSuperior = (tamanhoDiamante - 1) / 2;
-            int qtdEspaco = (tamanhoDiamante - 1) / 2;
-            int qtdX = 1;
+        Diamante.Configurar(Diamante.tamanhoDiamante);
 
-            for(int linha = 0; linha < linhaSuperior; linha++)
-            {
+        Diamante.ExecutarDiamante();
 
-                for (int c1 = 0; c1 < qtdEspaco; c1++)
-                {
-                    Console.Write(" ");                     
-                }
+        System.Console.WriteLine("\nDiamante finalizado.\nPressione ENTER para continuar\n");
+        Console.ReadLine();
 
-                for (int c2 = 0; c2 < qtdX; c2++)
-                {
-                    Console.Write("X");          
-                }
-                    qtdEspaco -= 1;
-                    qtdX += 2;
-            System.Console.WriteLine();
-            }
+        if (!UsuarioDesejaContinuar())
+            break;
 
-            for (int linhaMeio = 0; linhaMeio < tamanhoDiamante; linhaMeio++)
-            {          
-                Console.Write("X");      
-            }
-            System.Console.WriteLine();
-        
-            int qtdEspacoInferior = 1;
-            int qtdXInferior = tamanhoDiamante - 2;
-
-            for(int linha = 0; linha < linhaSuperior; linha++)
-            {
-
-                for (int c1 = 0; c1 < qtdEspacoInferior; c1++)
-                {
-                    Console.Write(" ");                     
-                }
-
-                for (int c2 = 0; c2 < qtdXInferior; c2++)
-                {
-                    Console.Write("X");          
-                }
-
-                qtdEspacoInferior++;
-                qtdXInferior -= 2;
-                
-                System.Console.WriteLine();
-            }        
         }
-    }
+    }   
+
+        static bool UsuarioDesejaContinuar()
+        {
+
+            System.Console.WriteLine("Deseja criar outro diamante? (s/N:)");
+            string? opcao = Console.ReadLine()?.ToUpper();
+
+            if (opcao != "S")
+            {
+                System.Console.WriteLine("Encerrando o programa...");
+                Thread.Sleep(1000);
+                return false;
+            }
+            else
+            return true;
+
+        }
+
+                    
 }
