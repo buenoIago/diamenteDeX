@@ -1,12 +1,3 @@
-/*
-● O programa deve solicitar ao usuário um número inteiro.
-● O número deve ser ímpar. Caso contrário, o programa deve informar que
-a entrada é inválida e solicitar um novo número.
-● O número de linhas e colunas deve ser igual ao número ímpar
-fornecido.
-● A linha central do diamante deve conter o número máximo de Xs.
-*/
-
 public static class Diamante
     {
         public static int tamanhoDiamante;
